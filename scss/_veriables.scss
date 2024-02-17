@@ -1,0 +1,11 @@
+:root {
+  --container-width: 1200px;
+  --container-padding: 20px;
+}
+
+@mixin display($fd: row, $jc: start, $ai: center) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}

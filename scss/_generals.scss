@@ -1,0 +1,10 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+
+  @include display($fd: column, $jc: unset, $ai: unset);
+  // font-family: ;
+}
