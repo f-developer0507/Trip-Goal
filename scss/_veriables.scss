@@ -1,6 +1,8 @@
 :root {
   --container-width: 1200px;
   --container-padding: 20px;
+  --accent: #3685fb;
+  --text-color: #002248;
 }
 
 @mixin display($fd: row, $jc: start, $ai: center) {
@@ -8,4 +10,25 @@
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
+}
+@mixin btn(
+  $padding: 16px 0px,
+  $width: 120px,
+  $height: 50px,
+  $fw: 500,
+  $fs: 16px,
+  $lh: 18px
+) {
+  padding: $padding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 10px;
 }

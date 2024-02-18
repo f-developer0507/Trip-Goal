@@ -4,7 +4,8 @@ html {
 
 body {
   min-height: 100vh;
-
-  @include display($fd: column, $jc: unset, $ai: unset);
-  // font-family: ;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
 }

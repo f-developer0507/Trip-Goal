@@ -1,5 +1,52 @@
 .site-header {
+  margin-bottom: 50px;
+  padding: 25px 0px;
 }
 
 .header-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+  transition: opacity 0.3s ease-in;
+}
+
+.header__logo:hover {
+  opacity: 80%;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.header__link {
+  cursor: pointer;
+  line-height: 16px;
+
+  color: var(--text-color);
+  transition: color 0.3s ease-in;
+}
+
+.header__link:hover {
+  color: var(--accent);
+}
+
+.header__register-btn {
+  @include btn();
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in;
+}
+
+.header__register-btn:hover {
+  background-color: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.header__register-btn:active {
+  position: relative;
+  top: 1px;
 }
