@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Trip Goal</title>
   </head>
   <body>
     <!-- Site Header start -->
     <header class="site-header">
       <div class="container">
-        <div class="header-row">
-
-        </div>
+        <div class="header-row"></div>
       </div>
     </header>
     <!-- Site Header end -->
 
     <!-- Site Main start -->
     <main class="site-main">
-
       <section class="intro-section">
         <div class="container">
           <div class="intro-row"></div>
@@ -28,20 +25,15 @@
 
       <section class="perfection">
         <div class="container">
-          <div class="perfection-row">
-
-          </div>
+          <div class="perfection-row"></div>
         </div>
       </section>
 
       <section class="suggested">
         <div class="container">
-          <div class="suggested-row">
-            
-          </div>
+          <div class="suggested-row"></div>
         </div>
-      </section> 
-
+      </section>
     </main>
     <!-- Site Main end -->
 
@@ -53,5 +45,15 @@
     </footer> -->
     <!-- Footer end -->
     <script src="./js/app.js"></script>
+    <!-- Vannila js -->
+    <script src="./js/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".suggested__item"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    </script>
   </body>
 </html>

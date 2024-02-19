@@ -113,6 +113,7 @@
 
   border-radius: 10px;
   background-color: #fff;
+  transform-style: preserve-3d;
 }
 
 .suggested__item::before {
@@ -152,11 +153,18 @@
 
 .suggested__item-content {
   padding: 23px 20px 22px;
-  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateZ(20px) translateX(-50%);
+
+  width: 310px;
+  height: 100px;
 
   background: rgba(0, 34, 72, 0.3);
   backdrop-filter: blur(20px);
   border-radius: 10px;
+  transition: transform 0.3s ease-in;
 }
 
 .suggested__item-title {
